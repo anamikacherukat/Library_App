@@ -1,0 +1,67 @@
+.signform
+{
+    border: 2px solid green;
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+    
+    padding: 30px;
+    border-radius: 30px;
+     background-color: rgb(203, 248, 203);
+     opacity: 0.9;
+}
+
+
+#SLIDE_bg
+{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    backface-visibility: hidden;
+    animation: slideBg 15s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(/images/signin3.jpg);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;  
+    margin-bottom: 50px;  
+    margin-top: 10px;
+}
+@keyframes slideBg
+{
+    
+
+    0%
+    {
+        background-image: url(/images/signin3.jpg);
+    }
+    25%
+    {
+        background-image: url(/images/signin1.jpg);
+        
+    }
+
+    50%
+    {
+        background-image: url(/images/signin2.jpg);
+        
+    }
+    
+    100%
+    {
+        background-image: url(/images/signin5.webp);
+        
+    }
+    
+}
+/* .para
+{
+    animation: color-change 5s infinite;
+
+}
+@keyframes color-change{
+    0%{color: indigo;}
+    50%{color:blue;}
+    100%{color: crimson;}
+} */

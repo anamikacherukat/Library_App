@@ -1,0 +1,155 @@
+body{
+    background-image: url(/images/library.jpg);
+
+}
+.fullform
+{
+    /* margin-left: 380px; */
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 30px;
+    margin-bottom: 100px;
+    float: right;
+    margin-top: 50px;
+    font-family: Signika, -apple-system, sans-serif;
+    /* background-color: rgb(197, 243, 197); 
+    opacity: 0.8; */
+    background-color: aliceblue;
+    
+
+}
+#strengthbox1
+{
+    width: 100px;
+    height: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(199, 206, 199);
+    border-radius: 12px;
+    margin-left: 15px;
+}
+#strengthbox2
+{
+    width: 100px;
+    height: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(199, 206, 199);
+    border-radius: 12px;
+    margin-left: 5px;
+}
+#strengthbox3
+{
+    width: 100px;
+    height: 8px;
+    box-sizing: border-box;
+    border: 1px solid rgb(199, 206, 199);
+    border-radius: 12px;
+    margin-left: 5px;
+}
+ #SLIDE_BG
+{
+    width: 100%;
+    height: 180vh;
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat;
+    backface-visibility: hidden;
+    animation: slideBg 10s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url(/images/joinus8.jpg);
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;  
+    margin-bottom: 50px;  
+    
+}
+@keyframes slideBg
+{
+    
+
+    0%
+    {
+        background-image: url(/images/joinus2.jpg);
+    }
+    14.2%
+    {
+        background-image: url(/images/joinus3.jpg);
+        
+    }
+
+    28.5%
+    {
+        background-image: url(/images/joinus4.jpg);
+        
+    }
+    57.1%
+    {
+        background-image: url(/images/joinus5.jpg);
+        
+    }
+    114.2%
+    {
+        background-image: url(/images/joinus6.jpg);
+        
+    }
+    228.5%
+    {
+        background-image: url(/images/joinus7.jpg);
+
+    }
+}
+    
+    #SLIDE_box
+    {
+        width: 100%;
+        height: 180vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: repeat;
+        backface-visibility: hidden;
+        animation: slideBg5 10s linear infinite 0s;
+        animation-timing-function: ease-in-out;
+        background-color: rgb(188, 248, 188);
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;  
+        margin-bottom: 50px;  
+        
+    }
+    @keyframes slideBg5
+{
+    
+
+    0%
+    {
+        background-color: rgb(160, 220, 235);
+    }
+    14.2%
+    {
+        background-color: rgb(225, 236, 186);
+
+        
+    }
+
+    28.5%
+    {
+        background-color: rgb(226, 189, 243);
+
+        
+    }
+    57.1%
+    {
+        background-color: rgb(236, 200, 231);
+
+        
+    }
+    114.2%
+    {
+        background-color: rgb(236, 199, 192);
+
+        
+    }
+    228.5%
+    {
+        background-color: rgb(232, 235, 196);
+
+
+    }
+}
