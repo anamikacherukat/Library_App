@@ -18,7 +18,7 @@
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
 	</head>
-	<body>
+	<body style="background-image: url(../images/login-bg.jpg);">
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -56,7 +56,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Login
+        <h1 style="margin-top: 100px;">Login
           <p class="lead"></p>
         </h1>
       </div>
@@ -79,36 +79,65 @@
     <div class="row">
       <div class="col-md-12">
         <div class="top-spacer"> </div>
-        <img src="/public/images/library.jpg" alt="">
       </div>
     </div> 
   </div><!-- /cont -->
   
 </div>
-
-
 <div class="container">
-  <!-- <div class="row"> -->
+<div class="row-md-4"> 
+  <div class="col">
+  
+  <!-- <div id="SLIDE_bgk"> -->
+        <div class="row" id="bookshelf" style="float: left;">
+           <div class="col-md-3" id="box1" style="float: left;">
+            <!-- <p style="color: white;font-family: 'Times New Roman', Times, serif;font-style: italic;font-size: xx-large;text-align: center;"><br>R</p> -->
+          </div>
+            <div class="col-md-3" id="box2" ></div>
+              <div class="col-md-4" id="box3" style="float: left;"></div>
+                <div class="col-md-4" id="box4" style="float: left;"></div>
+                  <div class="col-md-4" id="box5" style="float: left;"></div>
+                   <br><br><br><br> <br><br>
+           <div class="col-md-3" id="box6" style="float: left;"></div>
+            <div class="col-md-3" id="box7" ></div>
+              <div class="col-md-4" id="box8" style="float: left;"></div>
+                <div class="col-md-4" id="box9" style="float: left;"></div>
+                  <div class="col-md-4" id="box10" style="float: left;"></div>
+                  <br><br><br><br> <br><br>
+                  <div class="col-md-3" id="box11" style="float: left;"></div>
+                    <div class="col-md-3" id="box12" ></div>
+                      <div class="col-md-4" id="box13" style="float: left;"></div>
+                        <div class="col-md-4" id="box14" style="float: left;"></div>
+                          <div class="col-md-4" id="box15" style="float: left;"></div>
+                          <br><br><br><br> <br><br>
+                          <div class="col-md-3" id="box16" style="float: left;"></div>
+                            <div class="col-md-3" id="box17" ></div>
+                              <div class="col-md-4" id="box18" style="float: left;"></div>
+                                <div class="col-md-4" id="box19" style="float: left;"></div>
+                                  <div class="col-md-4" id="box20" style="float: left;"></div> 
+        </div>
+           
+                <!-- </div> -->
+      
+        <div class="container">
     
-    <div class="col-md-12"> 
+            <!-- <div class="col-md-12">  -->
       
       <!-- <div class="panel"> -->
         <div class="panel-body">
           
-          <img src="/public/images/library.jpg" alt="">
           
           <!--/stories-->
-          <form class="signform" action="books">
+          <form  name= "form" class="signform" onsubmit="return validate();">
         
             <h3>Sign in</h3>
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
-              <small id="emailHelp" class="form-text text-muted" >We'll never share your email with anyone else.</small>
+              <label for="exampleInputEmail1">Username</label>
+              <input type="text" class="form-control" id="user" aria-describedby="emailHelp" required>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" required>
+              <input type="password" class="form-control" id="pwd" required>
             </div>
             <div class="form-group form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -123,10 +152,9 @@
 
 
           
-          
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
         
-          
+          </div>
         </div>
       <!-- </div> -->
                                                                                        
@@ -136,7 +164,7 @@
   <!-- </div> -->
 </div>
                                                 
-                                                                                
+     </div>                                                                           
 <hr>
 
 <div class="container" id="footer">
@@ -178,6 +206,34 @@
 </footer>
 	<!-- script references -->
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var user= document.getElementById("user");
+      var pwd= document.getElementById("pwd");
+        
+  function validate()
+  {
+     var username= "admin";
+     var password="admin";
+     
+
+    if((username==user.value) &&  (password==pwd.value))
+   {
+         console.log("true");
+         document.form.action="admin"
+          return true;
+     }
+     else
+     {
+       console.log("false");
+       document.form.action="user"
+       
+        return true;
+     }
+    }
+    // function invalid(){
+    //   return true;
+    // }
+    </script>
 	</body>
 </html>

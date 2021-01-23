@@ -1,60 +1,65 @@
 .signform
 {
-    border: 2px solid green;
+    border: 2px solid black;
     float: right;
     margin-right: 20px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     
     padding: 30px;
     border-radius: 30px;
-     background-color: rgb(203, 248, 203);
      opacity: 0.9;
 }
 
-
-#SLIDE_bg
+/* 
+#SLIDE_bgk
 {
-    width: 100%;
-    height: 100vh;
+    width: 70%;
+    height: 65vh;
     background-position: center;
-    background-size: contain;
+    background-size: 32em;
     background-repeat: repeat;
     backface-visibility: hidden;
-    animation: slideBg 15s linear infinite 0s;
+    animation: slideBg10 15s linear infinite 0s;
     animation-timing-function: ease-in-out;
-    background-image: url(/images/signin3.jpg);
+    background-image: url(../images/bq1.jpg);
     animation-iteration-count: infinite;
     animation-fill-mode: both;  
     margin-bottom: 50px;  
     margin-top: 10px;
+    border: 1px solid black;
+    /* height: 200px; 
+    padding: 30px;
+    /* margin: 20px; 
+    border-radius: 25px;
+    float: left;
 }
-@keyframes slideBg
+@keyframes slideBg10
 {
     
 
     0%
     {
-        background-image: url(/images/signin3.jpg);
+        background-image: url(../images/bq2.jpg);
     }
-    25%
+    20%
     {
-        background-image: url(/images/signin1.jpg);
+        background-image: url(../images/bq3.jpg);
         
     }
 
-    50%
+    40%
     {
-        background-image: url(/images/signin2.jpg);
+        background-image: url(../images/bq4.jpg);
         
     }
     
-    100%
+    80%
     {
-        background-image: url(/images/signin5.webp);
+        background-image: url(../images/bq5.jpg);
         
     }
     
-}
+} */
 /* .para
 {
     animation: color-change 5s infinite;
@@ -65,3 +70,156 @@
     50%{color:blue;}
     100%{color: crimson;}
 } */
+/* .col-md-4
+{
+    border: 1px solid black;
+    height: 200px;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 25px;
+    float: left;
+    /* background-color: black; */
+    /* background-image: url(../images/library.jpg); 
+    
+} */
+#bookshelf
+{
+    background-image: url(../images/bookshelf.jpg);
+}
+#box1
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+
+}
+#box2
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box3
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box4
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box5
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box6
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box7
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box8
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box9
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box10
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box11
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box12
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box13
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box14
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box15
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box16
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box17
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box18
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box19
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}
+#box20
+
+{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+}

@@ -3,7 +3,6 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title><%=title%></title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -13,7 +12,7 @@
 		<![endif]-->
 		<link href="/css/styles.css" rel="stylesheet">
 	</head>
-	<body  style="background-image: url(../images/writing.jpg);">
+	<body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -24,7 +23,6 @@
         <span class="icon-bar"></span>
       </button>
       <!-- <a href="/" class="navbar-brand">Home</a> -->
-
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
@@ -37,8 +35,11 @@
       <ul class="nav navbar-right navbar-nav">
         <a href="/" class="navbar-brand">Sign Out</a>
 
+          </ul>
+        </li>
       </ul>
     </nav>
+
   </div>
 </header>
 
@@ -46,10 +47,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1 style="margin-top: 100px;">Authors
+        <h1 style="margin-top: 100px;">Update Book
           <p class="lead"></p>
         </h1>
       </div>
+
+      
       
     </div> 
   </div><!-- /cont -->
@@ -76,29 +79,21 @@
           
           
           <!--/stories-->
-          <%for(i=0;i<authors.length;i++){%>
-
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="/images/<%=authors[i].image%>" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3><%=authors[i].title%></h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=authors[i].Best_known_for%></span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><%=authors[i].Origin%>
-                    <a href="/authors/<%=authors[i]._id%>" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
-            </div>
+          <div class="row">
+            <form method="POST" action="/updatebook/updatebooks/<%=id%>" class="adding">
+            
+              <!-- Enter the book title you want to update: <br> <input type="text" name="title"> <br> <br> -->
+              Enter the updated values: <br>
+              Title:  <input type="text" name="title"> <br> <br>
+              Author: <input type="text" name="author"> <br> <br>
+              Genre: <input type="text" name="genre"> <br> <br>
+              Image: <input type="file" name="image"> <br> <br>
+              Description: <input type="text" name="desc"> <br>
+              <button type="submit">Update</button>
+            </form>
+          
           </div>
-          <%}%>
-
-          <hr>
+          
           
           <!--/stories-->
           

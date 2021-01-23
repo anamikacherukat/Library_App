@@ -13,7 +13,7 @@
 		<![endif]-->
 		<link href="/css/styles.css" rel="stylesheet">
 	</head>
-	<body  style="background-image: url(../images/writing.jpg);">
+	<body>
 <header class="navbar navbar-bright navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -28,9 +28,11 @@
     </div>
     <nav class="collapse navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">
-          <%for(i=0;i<nav.length;i++){%>
+          <%for(i=0;i<nav3.length;i++){%>
         <li>
-          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          <a href="<%=nav3[i].link%>"><%=nav3[i].name%></a>
+          <a href="<%=nav3[i].link%>"><%=nav3[i].des%></a>
+
         </li>
        <%}%>
       </ul>
@@ -46,11 +48,21 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1 style="margin-top: 100px;">Authors
+        <h1 style="margin-top: 100px
+        ;">Book
           <p class="lead"></p>
         </h1>
       </div>
-      
+      <!-- <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div> 
   </div><!-- /cont -->
   
@@ -60,7 +72,7 @@
         <div class="top-spacer"> </div>
       </div>
     </div> 
-  </div><!-- /cont -->
+  </div>
   
 </div>
 
@@ -76,34 +88,36 @@
           
           
           <!--/stories-->
-          <%for(i=0;i<authors.length;i++){%>
-
           <div class="row">    
             <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="/images/<%=authors[i].image%>" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
+             <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img alt="" src="/images/<%=book.image%>" style="width:100px;height:100px" class="img-circle"></a>
+            </div> 
             <div class="col-md-10 col-sm-9">
-              <h3><%=authors[i].title%></h3>
+              <h3><%=book.title%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=authors[i].Best_known_for%></span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><%=authors[i].Origin%>
-                    <a href="/authors/<%=authors[i]._id%>" class="text-muted">Read More</a></small>
+                  <h4><span class="label label-default"><%=book.author%></span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted"><%=book.genre%>
+                    <larger style="font-family:courier,'new courier';font-weight: bolder;"><%=book.desc%>
                   </h4></div>
                 <div class="col-xs-3"></div>
               </div>
               <br><br>
             </div>
           </div>
-          <%}%>
-
           <hr>
           
           <!--/stories-->
           
-          
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+          <!-- <a href="/updatebook/<%=book._id%>"><button class="btn btn-secondary" style="float: left;" >Update</button></a>
+        
+        
+        <div id="button3">
+
+        <a href="/add/delete/<%=book._id%>"><button class="btn btn-secondary" style="margin-left: 100px;">Delete</button></a>
+        </div>
+           -->
         
           
         </div>

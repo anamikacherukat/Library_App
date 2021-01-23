@@ -6,15 +6,20 @@
 		<title><%=title%></title>
 		<meta name="generator" content="Bootply" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
 		<!--[if lt IE 9]>
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<link href="/css/styles.css" rel="stylesheet">
+     <link href="css/styles.css" rel="stylesheet"> 
+     <link href="css/formstyle.css" rel="stylesheet"> 
+        
+     <script src="/js/form.js"></script> 
+
+
 	</head>
-	<body  style="background-image: url(../images/writing.jpg);">
-<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+	 <body style="background-image: url(../images/book.jpg);">
+<header class="navbar navbar-bright  navbar-fixed-top" role="banner" >
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -35,88 +40,119 @@
        <%}%>
       </ul>
       <ul class="nav navbar-right navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
         <a href="/" class="navbar-brand">Sign Out</a>
 
       </ul>
     </nav>
-  </div>
-</header>
+  </div> 
+ </header> 
+
+
+
+
+
+
 
 <div id="masthead">  
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1 style="margin-top: 100px;">Authors
+        <h1 style="margin-top: 100px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><%=title%>
           <p class="lead"></p>
         </h1>
       </div>
-      
+      <!-- <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div> -->
     </div> 
   </div><!-- /cont -->
   
-  <div class="container">
+  <!-- <div class="container"> 
     <div class="row">
       <div class="col-md-12">
         <div class="top-spacer"> </div>
       </div>
     </div> 
-  </div><!-- /cont -->
+  </div>   -->
+  <!-- /cont -->
   
 </div>
 
-
-<div class="container">
-  <!-- <div class="row"> -->
-    
-    <div class="col-md-12"> 
+  <div class="container">
+   <!-- <div class="row"> -->
+    <div class="col">
+     <div class="row-md-3">  
       
       <!-- <div class="panel"> -->
-        <div class="panel-body">
-          
-          
-          
-          <!--/stories-->
-          <%for(i=0;i<authors.length;i++){%>
+           <!-- <div id="SLIDE_box">   -->
 
-          <div class="row">    
-            <br>
-            <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="/images/<%=authors[i].image%>" style="width:100px;height:100px" class="img-circle"></a>
-            </div>
-            <div class="col-md-10 col-sm-9">
-              <h3><%=authors[i].title%></h3>
-              <div class="row">
-                <div class="col-xs-9">
-                  <h4><span class="label label-default"><%=authors[i].Best_known_for%></span></h4><h4>
-                  <small style="font-family:courier,'new courier';" class="text-muted"><%=authors[i].Origin%>
-                    <a href="/authors/<%=authors[i]._id%>" class="text-muted">Read More</a></small>
-                  </h4></div>
-                <div class="col-xs-3"></div>
-              </div>
-              <br><br>
+          <!--/stories-->
+          <div class="row-md-3">
+          <div class="card" style="width: 2em;float: left;margin-left: 100px;">
+            <!-- <div class="card1" style="border: 2px solid black; height: 50px;width: 50px;background-image: url(../images/fav.jpg);"> -->
+             <img src="../images/fav.jpg" class="card-img-top" alt="..." width="1000%"> 
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;">Favourites</h5>
+              <p class="card-text" style="font-size: larger;font-weight: bold;">Quick access to your favourites!</p>
+              <a href="#" class="btn btn-primary">Click here</a>
             </div>
           </div>
-          <%}%>
+          <!-- </div> -->
 
-          <hr>
+
           
-          <!--/stories-->
+
+          <div class="card" style="width: 2em;margin-left: 700px;" >
+            <!-- <div class="card2" style="border: 2px solid black; height: 1px;width: 1px;"> -->
+
+            <img src="../images/add.jpg" class="card-img-top" alt="..." width="1000%">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;">Add Content</h5>
+              <p class="card-text" style="font-size: larger;font-weight: bold;">Click here to add,update or delete your collection</p>
+              <a href="addcontent" class="btn btn-primary">Click here</a>
+            </div>
+          </div>
+          <!-- </div> -->
           
+          <div class="card" style="width: 2em;margin-left: 100px;" >
+            <!-- <div class="card2" style="border: 2px solid black; height: 1px;width: 1px;"> -->
+
+            <img src="../images/suggested.jpg" class="card-img-top" alt="..." width="1000%">
+            <div class="card-body">
+              <h5 class="card-title" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: x-large;">Suggested</h5>
+              <p class="card-text" style="font-size: larger;font-weight: bold;">Check out collection custom made for you!</p>
+              <a href="#" class="btn btn-primary">Click here</a>
+            </div>
+          </div>
+         <!--div-->
+          </div>
+            <!--/stories-->
           
-          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+
         
-          
-        </div>
+         
+         <!-- </div>  -->
       <!-- </div> -->
                                                                                        
 	                                                
                                                       
-   	</div><!--/col-12-->
-  <!-- </div> -->
-</div>
-                                                
+   	 
+   <!-- </div> -->
+    
+                                           
                                                                                 
 <hr>
+  
 
 <div class="container" id="footer">
   <div class="row">
